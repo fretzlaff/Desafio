@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  rule: 1
+  value: MyString
+  target: one
+
+two:
+  type: 
+  rule: 1
+  value: MyString
+  target: two
