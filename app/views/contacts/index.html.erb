@@ -1,27 +1,12 @@
 <%- model_class = Contact -%>
 
 <%= search_form_for @search, :html => { :class => "form-horizontal contact" } do |f| %>
-<div class="form-group">
   <%= f.condition_fields do |c| %>
-    <div class="col-lg-4">
-      <%= c.attribute_fields do |a| %>
-        <%= a.attribute_select nil, class: "form-control" %>
-      <% end %>
-    </div>
-    <div class="col-lg-4">
-      <%= c.predicate_select Hash.new, class: "form-control" %>
-    </div>
-    <div class="col-lg-4">
-      <%= c.value_fields do |v| %>
-        <%= v.text_field :value, class: "form-control"%>
-      <% end %>
-    </div>
+    <%= render "condition_fields", f: c %>
   <% end %>
-  
   <div class="col-lg-2">
     <%= f.submit "Search", class: 'btn btn-primary' %>
   </div>
-</div>
 <% end %>
 
 <div class="page-header">
