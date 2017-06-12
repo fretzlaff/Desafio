@@ -1,14 +1,16 @@
 # README
 
-Aplicação publicada no link:
+
+Published on:
 https://rocky-waters-68827.herokuapp.com/
 
-application up and running.
-This README would normally document whatever steps are necessary to get the
+Instructions to run this application:
 
-Things you may want to cover:
+* Git url: [[https://github.com/fretzlaff/Desafio]]
 
-* Ruby version
+* Ruby version: 2.3.3
+
+* Rails version: 5.1.1
 
 * System dependencies
 
