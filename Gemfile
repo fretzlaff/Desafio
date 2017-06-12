@@ -22,8 +22,12 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'coffee-script-source', '1.8.0'
-gem 'twitter-bootstrap-rails'
 gem 'rails_serve_static_assets'
+
+# Use Bootstrap for better layout 
+gem 'twitter-bootstrap-rails'
+# Use Ransack for advanced search
+gem 'ransack'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

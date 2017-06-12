@@ -4,7 +4,15 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
   def index
-    @contacts = Contact.all
+    @search = Contact.search(params[:q])
+    @contacts = @search.result
+	@search.build_condition
+  end
+
+  def targeting
+    @search = Contact.search(params[:q])
+    @contacts = @search.result
+	@search.build_condition
   end
 
   # GET /contacts/1
@@ -71,4 +79,5 @@ class ContactsController < ApplicationController
     def contact_params
       params.require(:contact).permit(:name, :email, :age, :state, :role)
     end
+	
 end
