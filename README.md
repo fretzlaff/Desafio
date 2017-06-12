@@ -6,24 +6,33 @@ https://rocky-waters-68827.herokuapp.com/
 
 Instructions to run this application:
 
-* Git url: [[https://github.com/fretzlaff/Desafio]]
 
-* Ruby version: 2.3.3
+* Install Ruby version: 2.3.3
 
-* Rails version: 5.1.1
+* Install Rails version: 5.1.1
 
-* System dependencies
+* Clone this git url: https://github.com/fretzlaff/Desafio
 
-* Configuration
+* Install system dependencies: Bundler, Rake, Git, DevKit
 
-* Database creation
+* Run bundle install:
+```sh
+> bundle install
+```
 
-* Database initialization
+* Run database configuration:
+```sh
+> rails db:migrate
+```
+* Start app server
+```sh
+> rails s
+```
+* Open the application on http://localhost:3000 
+
 
 * How to run the test suite
+```sh
+> rake spec
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
