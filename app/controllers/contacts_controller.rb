@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
   def index
     @search = Contact.search(params[:q])
     @contacts = @search.result
-	@search.build_condition
+	  @search.build_condition
   end
 
   def targeting
