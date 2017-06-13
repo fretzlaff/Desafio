@@ -60,7 +60,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
-group :development do
+group :production do
   # Use postgre database for Heroku
   gem 'pg'
 end
