@@ -1,13 +1,13 @@
 <div class="form-group">
-  <div class="col-lg-4">
+  <div class="col-lg-4 col-md-4">
     <%= f.attribute_fields do |a| %>
       <%= a.attribute_select nil, class: "form-control" %>
     <% end %>
   </div>
-  <div class="col-lg-4">
-  <%= f.predicate_select({only: [:cont, :eq, :gt, :lt]}, {class: 'form-control'}) %>
+  <div class="col-lg-4 col-md-4">
+  <%= f.predicate_select({only: [:cont, :eq, :gt, :lt, :start, :end]}, {class: 'form-control'}) %>
   </div>
-  <div class="col-lg-4">
+  <div class="col-lg-4 col-md-4">
     <%= f.value_fields do |v| %>
       <%= v.text_field :value, class: "form-control"%>
     <% end %>
